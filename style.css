@@ -1,0 +1,535 @@
+:root {
+	--alertColor: #ea0000;
+	--normalColor: #04194bbb;
+	--lightText: #f5f5f5;
+	--whiteColor: #fff;
+	--blackColor: #000;
+	--blueFill: rgb(1, 28, 148);
+	--buttonColor: #1d61e9;
+	--darkButton: #012497;
+	--darkText: #04194bd2;
+	--transparent: rgba(255, 255, 255, 0);
+	--outline: #0026ffad;
+	--light-blue-1: #e8eefc;
+	--light-blue-2: rgba(133, 167, 253, 0.438);
+	--shadowColor: rgba(45, 88, 117, 0.158);
+	--placeholder: rgb(151, 151, 151);
+	--border: 1.5px solid rgba(216, 216, 216, 0.877);
+	--radius-1: 0.3em;
+	--radius-2: 0.5em;
+	--spacing: 0.55px;
+	--defaultSize: 16px;
+	--defaultGap: 0.7em;
+	--defaultColumns: 1fr 1fr;
+	--smallerSize: 0.8em;
+	--weight-1: 300;
+	--weight-2: 400;
+	--weight-3: 500;
+	--weight-4: 600;
+	--weight-5: 700;
+	--font-size-2: 1.1em;
+	--font-size-3: 1.2em;
+	--translate-1: translate(-50%, -45%);
+	--translate-2: translate(-50%, -35%);
+	--defaultFont: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji";
+	--programFont: program, sans-serif;
+	--containerShadow: 0 1.25em 3em rgba(0, 0, 0, 0.18);
+	--titleShadow: 1px 6px 30px var(--shadowColor), 1px 6px 30px var(--shadowColor), 0px 5px 5px var(--shadowColor),
+		-5px 5px 20px var(--shadowColor), 5px 5px 20px var(--shadowColor);
+	--pageBackground: radial-gradient(100% 225% at 100% 0%, #ff0000 0%, #000000 100%),
+		linear-gradient(236deg, #00c2ff 0%, #000000 100%),
+		linear-gradient(
+			135deg,
+			#34d0ff 0%,
+			#34d0ff 36%,
+			#007a9f 36%,
+			#007a9f 60%,
+			#07456f 60%,
+			#07456f 67%,
+			#0f0a3c 67%,
+			#0f0a3c 100%
+		);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	transition: ease all 0.05s;
+	font-family: var(--defaultFont);
+}
+
+body {
+	height: 100vh;
+	background: var(--pageBackground);
+	background-color: #06020c;
+	background-blend-mode: overlay, hard-light, normal;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#title {
+	text-align: center;
+	padding: 0.15em 0;
+	font-size: 10.5vmin;
+	color: var(--whiteColor);
+	font-family: var(--programFont);
+	font-weight: var(--weight-5);
+	font-style: normal;
+	text-shadow: var(--titleShadow);
+}
+
+.container {
+	position: absolute;
+	-webkit-transform: var(--translate-1);
+	transform: var(--translate-1);
+	left: 50%;
+	top: 50%;
+	background-color: var(--whiteColor);
+	width: min(70ch, 92%);
+	padding: 1.8em 1.8em 1.6em 1.8em;
+	box-shadow: var(--containerShadow);
+	border-radius: var(--radius-2);
+	z-index: 10;
+}
+
+::placeholder {
+	color: var(--placeholder);
+	font-size: var(--defaultSize);
+	font-weight: var(--weight-1);
+}
+
+textarea {
+	min-height: 50px;
+	max-height: 50vmin;
+	resize: vertical;
+	width: 100%;
+	padding: var(--radius-2);
+	line-height: 1.35;
+	font-size: var(--defaultSize);
+	border-radius: var(--radius-1);
+	letter-spacing: var(--spacing);
+	border: var(--border);
+}
+
+#copy-button-1 {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 0.9em;
+	border: var(--border);
+	border: none;
+	padding: 0.15em;
+	border-radius: var(--radius-1);
+	background-color: var(--transparent);
+}
+
+#copy-button-1 svg {
+	height: 20px;
+	width: 20px;
+	fill: var(--placeholder);
+}
+
+#copy-button-1:focus svg,
+#copy-button-1:hover svg,
+#copy-button-1 svg:hover {
+	fill: var(--blackColor);
+}
+
+#copy-button-1 svg:active,
+#copy-button-1:active svg {
+	fill: var(--whiteColor);
+}
+
+#copy-button-1:hover,
+#copy-button-1:focus {
+	background-color: var(--light-blue-2);
+	outline: 1.5px solid var(--outline);
+	border-radius: var(--radius-1);
+}
+
+#copy-button-1[title]:focus::after,
+#copy-button-1[title]:hover::after {
+	content: attr(title);
+	position: absolute;
+	top: -200%;
+	left: -18px;
+	font-size: var(--font-size-3);
+	letter-spacing: var(--spacing);
+	color: var(--whiteColor);
+}
+
+#copy-button-1:active {
+	color: var(--whiteColor);
+	background-color: var(--buttonColor);
+}
+
+.count {
+	margin: 16px 0 20px;
+	background-color: var(--darkButton);
+	width: 100%;
+	padding: 12px;
+	left: 50%;
+	display: grid;
+	grid-template-columns: var(--defaultColumns);
+	text-align: center;
+	border-radius: var(--radius-2);
+}
+
+.count p {
+	color: var(--lightText);
+	font-size: var(--font-size-2);
+	letter-spacing: 0.65px;
+}
+
+.count h5 {
+	color: var(--lightText);
+	font-size: 2em;
+}
+
+#result {
+	background-color: var(--light-blue-1);
+	text-align: center;
+	font-size: var(--font-size-3);
+	max-height: 20vmin;
+	padding: 1.35em 0.5em;
+	margin: 0.8em 0 1.2em 0;
+	color: var(--normalColor);
+	letter-spacing: var(--spacing);
+	border-radius: var(--radius-2);
+	overflow: auto;
+}
+
+#result span {
+	font-weight: var(--weight-4);
+	color: var(--darkText);
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--defaultGap);
+	width: 100%;
+	margin: 0.6em auto;
+	overflow: hidden;
+}
+
+#search-button,
+.buttons button {
+	background-color: var(--buttonColor);
+	font-size: var(--font-size-3);
+	border: none;
+	padding: 0.8em 0;
+	color: var(--lightText);
+	border-radius: var(--radius-1);
+	letter-spacing: var(--spacing);
+	font-weight: var(--weight-1);
+}
+
+.buttons button {
+	width: 50%;
+}
+
+.search-container {
+	width: 100%;
+	margin: 0.55em auto 0 auto;
+	display: grid;
+	grid-template-columns: var(--defaultColumns);
+	gap: var(--defaultGap);
+	overflow: hidden;
+}
+
+.search-container input {
+	padding: var(--radius-2);
+	font-size: var(--defaultSize);
+	border-radius: var(--radius-1);
+	border: var(--border);
+	letter-spacing: var(--spacing);
+}
+
+button:hover,
+button:focus,
+#search-button:hover,
+#search-button:focus {
+	background-color: var(--darkButton);
+	outline: none;
+}
+
+button:active,
+#search-button:active {
+	transform: scale(0.95);
+}
+
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0);
+	}
+	20%,
+	60% {
+		transform: rotate(-25deg);
+	}
+	40%,
+	80% {
+		transform: rotate(10deg);
+	}
+}
+
+@media (max-width: 500px) {
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
+	}
+}
+
+/* https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone 
+
+disabling zooming in on iphone and not zooming back
+
+*/
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	.search-container input,
+	textarea,
+	input {
+		font-size: var(--defaultSize);
+	}
+}
+
+@media (max-width: 600px) {
+	#title {
+		font-size: 14vmin;
+	}
+
+	.container {
+		padding: 1.25em;
+	}
+
+	#copy-button-1[title]:focus::after,
+	#copy-button-1[title]:hover::after {
+		top: -180%;
+		left: -14px;
+		font-size: var(--smallerSize);
+		font-weight: var(--weight-1);
+	}
+
+	#copy-button-1 {
+		padding: 0.1em;
+		top: 4px;
+		right: 4px;
+	}
+
+	#copy-button-1 svg {
+		height: 14px;
+		width: 14px;
+	}
+
+	.github-corner svg {
+		width: 52px;
+		height: 52px;
+	}
+
+	.buttons {
+		gap: var(--radius-2);
+	}
+
+	.search-container {
+		width: 100%;
+		margin: 0.6em auto 0 auto;
+		display: grid;
+		gap: var(--radius-2);
+	}
+
+	.buttons button,
+	.search-container input,
+	#search-button {
+		overflow: hidden;
+		font-weight: var(--weight-2);
+	}
+
+	.search-container input {
+		outline-offset: -2px;
+		-webkit-outline-offset: -2px;
+		-moz-outline-offset: -2px;
+		-ms-outline-offset: -2px;
+		-o-outline-offset: -2px;
+	}
+
+	.buttons button,
+	#search-button {
+		font-size: var(--defaultSize);
+	}
+
+	::placeholder,
+	#result,
+	textarea {
+		font-size: var(--defaultSize);
+	}
+
+	#result {
+		margin: 0.2em 0 0.2em 0;
+	}
+
+	.count {
+		margin: 10px 0 12px;
+		padding: 10px;
+		overflow: hidden;
+	}
+
+	.count h5 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 350px) {
+	#copy-button-1 {
+		top: 16px;
+		right: 16px;
+		padding: 0.15em;
+	}
+
+	#copy-button-1 svg {
+		height: 12px;
+		width: 12px;
+	}
+
+	#copy-button-1[title]:focus::after,
+	#copy-button-1[title]:hover::after {
+		top: -220%;
+	}
+
+	.github-corner svg {
+		width: 40px;
+		height: 40px;
+	}
+
+	.container {
+		padding: var(--smallerSize);
+	}
+
+	.search-container {
+		margin: 0.6em auto 0 auto;
+	}
+
+	.count,
+	#search-button,
+	.buttons button {
+		font-size: var(--smallerSize);
+	}
+
+	#result {
+		font-size: var(--smallerSize);
+		padding: 1em 0.5em;
+	}
+
+	.count {
+		margin: 10px 0 12px;
+		padding: 4px;
+	}
+
+	.count h5 {
+		font-size: 25px;
+	}
+
+	textarea {
+		max-height: 30vmin;
+	}
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 300px) and (max-device-width: 900px) {
+	#title {
+		padding: 0.2em 0 0.05em 0;
+		font-size: 8vmin;
+	}
+
+	.container {
+		-webkit-transform: var(--translate-2);
+		transform: var(--translate-2);
+		width: min(50ch, 50%);
+		padding: 0.65em;
+	}
+
+	textarea {
+		min-height: 50px;
+		max-height: 10vmin;
+		line-height: 1;
+	}
+
+	.count {
+		margin: 8px 0 10px;
+		padding: 7px;
+	}
+
+	.count h5 {
+		font-size: 1.25em;
+		font-weight: var(--weight-3);
+	}
+
+	#copy-button-1 {
+		top: 14px;
+		right: 14px;
+		padding: 0.1em;
+	}
+
+	#copy-button-1 svg {
+		height: 12px;
+		width: 12px;
+	}
+
+	#copy-button-1[title]:focus::after,
+	#copy-button-1[title]:hover::after {
+		top: -220%;
+		left: -14px;
+		font-size: var(--smallerSize);
+		font-weight: var(--weight-1);
+	}
+
+	.github-corner svg {
+		width: 50px;
+		height: 50px;
+	}
+
+	#result {
+		font-size: 0.9em;
+		padding: 1em 0.5em;
+		margin: 0;
+	}
+
+	#search-button,
+	.buttons button,
+	.search-container input {
+		overflow: hidden;
+		font-weight: var(--weight-2);
+	}
+
+	.search-container input {
+		outline-offset: -2px;
+		-webkit-outline-offset: -2px;
+		-moz-outline-offset: -2px;
+		-ms-outline-offset: -2px;
+		-o-outline-offset: -2px;
+	}
+
+	.count,
+	#search-button,
+	.buttons button {
+		font-size: var(--smallerSize);
+	}
+
+	.search-container {
+		margin: 0.5em auto 0 auto;
+	}
+
+	.search-container input,
+	textarea,
+	input {
+		font-size: var(--defaultSize);
+	}
+}
