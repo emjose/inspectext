@@ -129,6 +129,7 @@ function hasInvalid(string) {
 	}
 }
 
+// Palindrome Validation
 function isPalindrome() {
 	let inputText = inputTextArea.value;
 	let palText = `<span>${inputText}</span>`;
