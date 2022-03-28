@@ -41,7 +41,7 @@
 
 -   **[InspecText](https://inspectext.vercel.app/)** is a word counting app, adapted from a <a href="https://www.youtube.com/watch?v=ArYsctCP9u8">tutorial</a> by the <a href="https://www.youtube.com/channel/UC15exV5s79D_aYGADudlwpQ">Coding Artist</a>.
 
--   Core features include word and character count, string reversal, and palindrome validation.
+-   Core features include word and character count, string reversal, substring search, and palindrome validation.
 
 -   For enhanced functionality, the following features were implemented:
 
