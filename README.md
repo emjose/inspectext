@@ -92,8 +92,10 @@ open index.html
 
 • A reversed emoji may appear as �� ([replacement characters](<https://en.wikipedia.org/wiki/Specials_(Unicode_block)>)) if its **backwards** unicode sequence is invalid.
 
-#
+<a href=#live-site>![Click below to expand](https://res.cloudinary.com/dn1e07eul/image/upload/v1659569626/Readme%20Headers/inter-click-small_xzkijp.png)</a>
 
+<details>
+<summary><b>GIF demo: Copying and clearing text</b></summary>
 <br>
 
 <a href="https://inspectext.vercel.app/">![Live Site](Assets/035-inspectext-3.gif)</a>
@@ -104,6 +106,10 @@ open index.html
 
 #
 
+</details>
+
+<details>
+<summary><b>GIF demo: Palindrome validation</b></summary>
 <br>
 
 <a href="https://inspectext.vercel.app/">![Live Site](Assets/035-inspectext-2.gif)</a>
@@ -111,6 +117,8 @@ open index.html
 • Users can test strings for palindrome validation.
 
 • Whitespaces, capitalization, and punctuation characters are ignored.
+
+<br>
 
 ### Invalid Palindrome Scenarios:
 
@@ -120,13 +128,16 @@ open index.html
 
 • Alphanumeric strings that do **not** read the same forwards or backwards.
 
+</details>
+
 #
 
 <p id="palindrome-examples"><p>
 
 <a href=#palindrome-examples>![Palindrome Examples](Assets/sub-palindrome-examples.png)</a>
 
-### Words, Names, and Dates
+<details>
+<summary><b>Words, Names, and Dates</b></summary>
 
 -   I
 -   a
@@ -142,7 +153,10 @@ open index.html
 -   Hannah
 -   2/22/22
 
-### Phrases and Sentences
+</details>
+
+<details>
+<summary><b>Phrases and Sentences</b></summary>
 
 -   Step on no pets!
 -   Stressed desserts
@@ -156,6 +170,8 @@ open index.html
 -   Cigar? Toss it in a can. It is so tragic.
 -   Are we not drawn onward, we few, drawn onward to new era?
 -   Are we not pure? “No, sir!” Panama’s moody Noriega brags. “It is garbage!” Irony dooms a man—a prisoner up to new era.
+
+</details>
 
 <br>
 
