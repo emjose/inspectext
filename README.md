@@ -29,6 +29,8 @@
 -   [Resources](#resources)
 -   [Let's Connect!](#lets-connect)
 
+<br>
+
 #
 
 <p id="100days"><p>
@@ -52,6 +54,8 @@
 
 -   InspecText was personally rewarding to create, as the process was a great education on the topics of validation, regular expressions, best practices, functionality, and refactoring.
 
+<br>
+
 #
 
 <p id="installation"><p>
@@ -69,6 +73,8 @@ git clone git@github.com:emjose/inspectext.git && cd inspectext
 ```console
 open index.html
 ```
+
+<br>
 
 #
 
@@ -91,6 +97,8 @@ open index.html
 • Each **[emoji](https://unicode.org/faq/emoji_dingbats.html)** will register as one word comprised of two or more characters</a>.
 
 • A reversed emoji may appear as �� ([replacement characters](<https://en.wikipedia.org/wiki/Specials_(Unicode_block)>)) if its **backwards** unicode sequence is invalid.
+
+• **[InspecText](https://inspectext.vercel.app/)** is a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps).
 
 <a href=#live-site>![Click below to expand](https://res.cloudinary.com/dn1e07eul/image/upload/v1659569626/Readme%20Headers/inter-click-small_xzkijp.png)</a>
 
@@ -173,6 +181,8 @@ open index.html
 
 </details>
 
+<br>
+
 #
 
 <p id="resources"><p>
@@ -196,6 +206,8 @@ open index.html
 -   #### [50+ Palindrome Sentences And Names](https://www.scarymommy.com/palindrome-sentences)
 -   #### [Twitter Now Counts Every Emoji as Equal](https://blog.emojipedia.org/twitter-now-counts-every-emoji-as-equal/#:~:text=The%20limit%20of%20280%20characters,use%20a%20consistent%20two%20characters.)
 -   #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd)
+
+<br>
 
 #
 
