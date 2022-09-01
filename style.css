@@ -323,23 +323,8 @@ disabling zooming in on iphone and not zooming back
 		padding: 1.25em;
 	}
 
-	#copy-button-1[title]:focus::after,
-	#copy-button-1[title]:hover::after {
-		top: -180%;
-		left: -14px;
-		font-size: var(--smallerSize);
-		font-weight: var(--weight-1);
-	}
-
 	#copy-button-1 {
-		padding: 0.1em;
-		top: 4px;
-		right: 4px;
-	}
-
-	#copy-button-1 svg {
-		height: 14px;
-		width: 14px;
+		display: none;
 	}
 
 	.github-corner svg {
@@ -400,22 +385,6 @@ disabling zooming in on iphone and not zooming back
 }
 
 @media (max-width: 350px) {
-	#copy-button-1 {
-		top: 16px;
-		right: 16px;
-		padding: 0.15em;
-	}
-
-	#copy-button-1 svg {
-		height: 12px;
-		width: 12px;
-	}
-
-	#copy-button-1[title]:focus::after,
-	#copy-button-1[title]:hover::after {
-		top: -220%;
-	}
-
 	.github-corner svg {
 		width: 40px;
 		height: 40px;
@@ -460,6 +429,10 @@ disabling zooming in on iphone and not zooming back
 		font-size: 8vmin;
 	}
 
+	#copy-button-1 {
+		display: none;
+	}
+
 	.container {
 		-webkit-transform: var(--translate-2);
 		transform: var(--translate-2);
@@ -481,25 +454,6 @@ disabling zooming in on iphone and not zooming back
 	.count h5 {
 		font-size: 1.25em;
 		font-weight: var(--weight-3);
-	}
-
-	#copy-button-1 {
-		top: 14px;
-		right: 14px;
-		padding: 0.1em;
-	}
-
-	#copy-button-1 svg {
-		height: 12px;
-		width: 12px;
-	}
-
-	#copy-button-1[title]:focus::after,
-	#copy-button-1[title]:hover::after {
-		top: -220%;
-		left: -14px;
-		font-size: var(--smallerSize);
-		font-weight: var(--weight-1);
 	}
 
 	.github-corner svg {
